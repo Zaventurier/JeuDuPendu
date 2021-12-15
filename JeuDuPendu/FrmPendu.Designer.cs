@@ -141,6 +141,7 @@ namespace JeuDuPendu
             this.cboLettre.Name = "cboLettre";
             this.cboLettre.Size = new System.Drawing.Size(71, 35);
             this.cboLettre.TabIndex = 0;
+            this.cboLettre.SelectedIndexChanged += new System.EventHandler(this.cboLettre_SelectedIndexChanged);
             // 
             // frmPendu
             // 

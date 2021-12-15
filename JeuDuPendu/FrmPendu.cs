@@ -48,8 +48,9 @@ namespace JeuDuPendu
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-               txtMot.Text = txtMot.Text.Length.ToString();
+               //txtMot.Text = txtMot.Text.Length.ToString();
                 int nbrlettre = txtMot.Text.Length;
+                txtMot.Text = "";
                 for (int i = 0; i < nbrlettre ; i++)
                 {
                     txtMot.Text += "-";
@@ -58,6 +59,10 @@ namespace JeuDuPendu
 
         }
 
+        private void cboLettre_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtMot.Text = cboLettre.Text;
 
+        }
     }
 }
