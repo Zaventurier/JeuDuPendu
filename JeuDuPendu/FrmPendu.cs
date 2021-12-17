@@ -79,12 +79,12 @@ namespace JeuDuPendu
             {
                 txtMot.Text += resultat[i].ToString();
             }
-
+            //MessageBox.Show("Bravo ! Le mot caché à été trouvé !", "Jeu du Pendu");
         }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            //(MessageBox.Show("Bravo !", "Vous avez trouvé le mot caché !")
+            //
         }
     }
 }
