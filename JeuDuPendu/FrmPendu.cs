@@ -84,7 +84,7 @@ namespace JeuDuPendu
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            //(MessageBox.Show("Vider la liste?", "Confirmation", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            //(MessageBox.Show("Bravo !", "Vous avez trouvé le mot caché !")
         }
     }
 }
