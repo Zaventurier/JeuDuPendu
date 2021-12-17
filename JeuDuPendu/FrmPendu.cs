@@ -79,5 +79,10 @@ namespace JeuDuPendu
             //txtMot.Text = cboLettre.Text;
 
         }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            //(MessageBox.Show("Vider la liste?", "Confirmation", MessageBoxButtons.OKCancel) == DialogResult.OK)
+        }
     }
 }

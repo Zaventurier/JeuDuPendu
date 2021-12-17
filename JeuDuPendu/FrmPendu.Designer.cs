@@ -131,6 +131,7 @@ namespace JeuDuPendu
             this.btnTest.TabIndex = 1;
             this.btnTest.Text = "TEST";
             this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // cboLettre
             // 
@@ -155,7 +156,7 @@ namespace JeuDuPendu
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPendu";
-            this.Text = "Jeu du Pendu";
+            this.Text = "Jeu du Pendu 1.1.0";
             this.Load += new System.EventHandler(this.frmPendu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
