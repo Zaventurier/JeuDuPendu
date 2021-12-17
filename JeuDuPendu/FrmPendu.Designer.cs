@@ -156,7 +156,7 @@ namespace JeuDuPendu
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPendu";
-            this.Text = "Jeu du Pendu 1.1.0";
+            this.Text = "Jeu du Pendu [En développement]";
             this.Load += new System.EventHandler(this.frmPendu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
