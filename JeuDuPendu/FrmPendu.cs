@@ -10,6 +10,7 @@ namespace JeuDuPendu
 {
     public partial class frmPendu : Form
     {
+        string mot = "";
         /// <summary>
         /// Initialisation des objets graphiques
         /// </summary>
@@ -50,6 +51,7 @@ namespace JeuDuPendu
             {
                //txtMot.Text = txtMot.Text.Length.ToString();
                 int nbrlettre = txtMot.Text.Length;
+                mot = txtMot.Text;
                 txtMot.Text = "";
                 for (int i = 0; i < nbrlettre ; i++)
                 {
@@ -61,7 +63,20 @@ namespace JeuDuPendu
 
         private void cboLettre_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtMot.Text = cboLettre.Text;
+            for (int i = 0; i < mot.Length; i++)
+            {
+                if (mot[i] == Char.Parse(cboLettre.Text))
+                {
+                    txtMot.Text += cboLettre.Text;
+                }
+                else
+                {
+                    txtMot.Text += "-";
+                }
+                
+            }
+                
+            //txtMot.Text = cboLettre.Text;
 
         }
     }
