@@ -11,6 +11,7 @@ namespace JeuDuPendu
     public partial class frmPendu : Form
     {
         string mot = "";
+        char[] resultat = new char[15] { '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'};
         string mot2 = "";
         /// <summary>
         /// Initialisation des objets graphiques
@@ -68,17 +69,15 @@ namespace JeuDuPendu
             {
                 if (mot[i] == Char.Parse(cboLettre.Text))
                 {
-                    mot2 = txtMot.Text;
-                    txtMot.Text += cboLettre.Text;
-                }
-                else
-                {
-                    txtMot.Text += "-";
+                    resultat[i] = Char.Parse(cboLettre.Text);
                 }
                 
             }
-                
-            //txtMot.Text = cboLettre.Text;
+            txtMot.Text = "";
+            for (int i = 0; i < mot.Length; i++)
+            {
+                txtMot.Text += resultat[i].ToString();
+            }
 
         }
 
