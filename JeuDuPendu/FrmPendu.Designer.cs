@@ -97,6 +97,7 @@ namespace JeuDuPendu
             this.imgPendu.Size = new System.Drawing.Size(333, 308);
             this.imgPendu.TabIndex = 1;
             this.imgPendu.TabStop = false;
+            this.imgPendu.Click += new System.EventHandler(this.imgPendu_Click);
             // 
             // grpTestLettres
             // 

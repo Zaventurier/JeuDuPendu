@@ -78,6 +78,7 @@ namespace JeuDuPendu
                 if (mot[i] == Char.Parse(cboLettre.Text))
                 {
                     resultat[i] = Char.Parse(cboLettre.Text);
+                     
                     
                 }
 
@@ -102,6 +103,11 @@ namespace JeuDuPendu
             lblLettres.Text = "";
             mot = "";
             txtMot.Text = "";
+        }
+
+        private void imgPendu_Click(object sender, EventArgs e)
+        {
+            //System.Drawing.Graphics.FromHwnd(this.Handle);
         }
     }
 }
