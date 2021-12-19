@@ -78,10 +78,11 @@ namespace JeuDuPendu
                 if (mot[i] == Char.Parse(cboLettre.Text))
                 {
                     resultat[i] = Char.Parse(cboLettre.Text);
+                    
                 }
 
             }
-            //lblLettres.Text += cboLettre;
+            lblLettres.Text += cboLettre.Text;
             txtMot.Text = "";
             for (int i = 0; i < mot.Length; i++)
             {
