@@ -87,6 +87,7 @@ namespace JeuDuPendu
             this.btnRejouer.Size = new System.Drawing.Size(61, 57);
             this.btnRejouer.TabIndex = 2;
             this.btnRejouer.UseVisualStyleBackColor = true;
+            this.btnRejouer.Click += new System.EventHandler(this.btnRejouer_Click);
             // 
             // imgPendu
             // 

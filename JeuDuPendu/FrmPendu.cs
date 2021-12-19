@@ -93,5 +93,14 @@ namespace JeuDuPendu
         {
             
         }
+
+        private void btnRejouer_Click(object sender, EventArgs e)
+        {
+            //Reset de toutes les variables
+            cboLettre.Text = "";
+            lblLettres.Text = "";
+            mot = "";
+            txtMot.Text = "";
+        }
     }
 }
