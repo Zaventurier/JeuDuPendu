@@ -55,6 +55,7 @@ namespace JeuDuPendu
                 int nbrlettre = txtMot.Text.Length;
                 mot = txtMot.Text;
                 txtMot.Text = "";
+                lblLettres.Text = "";
                 for (int i = 0; i < nbrlettre ; i++)
                 {
                     txtMot.Text += "-";
@@ -80,6 +81,7 @@ namespace JeuDuPendu
                 }
 
             }
+            //lblLettres.Text += cboLettre;
             txtMot.Text = "";
             for (int i = 0; i < mot.Length; i++)
             {
@@ -89,7 +91,7 @@ namespace JeuDuPendu
 
         private void lblLettres_Click(object sender, EventArgs e)
         {
-            lblLettres.Text = "";
+            
         }
     }
 }
