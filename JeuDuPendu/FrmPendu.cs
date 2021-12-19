@@ -66,25 +66,30 @@ namespace JeuDuPendu
 
         private void cboLettre_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+            //MessageBox.Show("Bravo ! Le mot caché à été trouvé !", "Jeu du Pendu");
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
             for (int i = 0; i < mot.Length; i++)
             {
                 if (mot[i] == Char.Parse(cboLettre.Text))
                 {
                     resultat[i] = Char.Parse(cboLettre.Text);
                 }
-                
+
             }
             txtMot.Text = "";
             for (int i = 0; i < mot.Length; i++)
             {
                 txtMot.Text += resultat[i].ToString();
             }
-            //MessageBox.Show("Bravo ! Le mot caché à été trouvé !", "Jeu du Pendu");
         }
 
-        private void btnTest_Click(object sender, EventArgs e)
+        private void lblLettres_Click(object sender, EventArgs e)
         {
-            //
+            lblLettres.Text = "";
         }
     }
 }

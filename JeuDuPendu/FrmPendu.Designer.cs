@@ -121,6 +121,7 @@ namespace JeuDuPendu
             this.lblLettres.Size = new System.Drawing.Size(350, 28);
             this.lblLettres.TabIndex = 2;
             this.lblLettres.Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            this.lblLettres.Click += new System.EventHandler(this.lblLettres_Click);
             // 
             // btnTest
             // 
