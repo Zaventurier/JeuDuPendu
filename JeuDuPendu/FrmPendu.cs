@@ -13,6 +13,8 @@ namespace JeuDuPendu
         string mot = "";
         char[] resultat = new char[15] { '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'};
         string mot2 = "";
+        int compteur = 0;
+
         /// <summary>
         /// Initialisation des objets graphiques
         /// </summary>
@@ -77,12 +79,14 @@ namespace JeuDuPendu
             {
                 if (mot[i] == Char.Parse(cboLettre.Text))
                 {
-                    resultat[i] = Char.Parse(cboLettre.Text);
-                     
-                    
+                    resultat[i] = Char.Parse(cboLettre.Text); 
                 }
-
+                if (mot[i] != Char.Parse(cboLettre.Text))
+                {
+                    compteur = compteur + 1;
+                }
             }
+
             lblLettres.Text += cboLettre.Text;
             txtMot.Text = "";
             for (int i = 0; i < mot.Length; i++)
@@ -107,7 +111,7 @@ namespace JeuDuPendu
 
         private void imgPendu_Click(object sender, EventArgs e)
         {
-            //System.Drawing.Graphics.FromHwnd(this.Handle);
+
         }
     }
 }
