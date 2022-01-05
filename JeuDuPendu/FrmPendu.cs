@@ -76,7 +76,7 @@ namespace JeuDuPendu
         private void cboLettre_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-            //MessageBox.Show("Bravo ! Le mot caché à été trouvé !", "Jeu du Pendu");
+            
         }
 
         private void btnTest_Click(object sender, EventArgs e)
@@ -95,6 +95,10 @@ namespace JeuDuPendu
             {
             compteur = compteur + 1;
             imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu" + compteur);
+                if (compteur == 10)
+                {
+                    MessageBox.Show("Vous avez perdu :( ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
+                }
             }
            
                 
@@ -119,7 +123,7 @@ namespace JeuDuPendu
             lblLettres.Text = "";
             mot = "";
             txtMot.Text = "";
-            //imgPendu_Click = "";
+            imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu0"); ;
         }
 
         private void imgPendu_Click(object sender, EventArgs e)

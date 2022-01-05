@@ -152,7 +152,7 @@ namespace JeuDuPendu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 334);
+            this.ClientSize = new System.Drawing.Size(1068, 519);
             this.Controls.Add(this.lblResultat);
             this.Controls.Add(this.grpTestLettres);
             this.Controls.Add(this.btnRejouer);
@@ -160,7 +160,7 @@ namespace JeuDuPendu
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPendu";
-            this.Text = "Jeu du Pendu [En développement]";
+            this.Text = "Jeu du Pendu 1.0.0";
             this.Load += new System.EventHandler(this.frmPendu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
