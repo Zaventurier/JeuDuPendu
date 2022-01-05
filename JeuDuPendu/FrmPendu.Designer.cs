@@ -39,6 +39,12 @@ namespace JeuDuPendu
             this.lblLettres = new System.Windows.Forms.Label();
             this.btnTest = new System.Windows.Forms.Button();
             this.cboLettre = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPendu)).BeginInit();
             this.grpTestLettres.SuspendLayout();
@@ -148,11 +154,71 @@ namespace JeuDuPendu
             this.cboLettre.TabIndex = 0;
             this.cboLettre.SelectedIndexChanged += new System.EventHandler(this.cboLettre_SelectedIndexChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(785, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(379, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Jeu du Pendu - Version 1.0.2 en date du 05 Janvier 2021 :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(785, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(190, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "- Ce jeu se joue à 2 minimum";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(785, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(335, 17);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "- L\'un des joueurs choisit un mot qui se verra chiffré";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(785, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(459, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "- Le second devra deviner le mot tout en testant les lettres de son choix";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(785, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(466, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "- Si il trouve le mot avant que le pendu ne s\'affiche il gagne, sinon il perd";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(785, 200);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(251, 17);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "- Le mot doit faire 15 lettres maximum !";
+            // 
             // frmPendu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 519);
+            this.ClientSize = new System.Drawing.Size(1267, 641);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblResultat);
             this.Controls.Add(this.grpTestLettres);
             this.Controls.Add(this.btnRejouer);
@@ -160,7 +226,7 @@ namespace JeuDuPendu
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPendu";
-            this.Text = "Jeu du Pendu 1.0.1";
+            this.Text = "Jeu du Pendu 1.0.2";
             this.Load += new System.EventHandler(this.frmPendu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -188,6 +254,12 @@ namespace JeuDuPendu
         private System.Windows.Forms.Label lblLettres;
         private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.ComboBox cboLettre;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
