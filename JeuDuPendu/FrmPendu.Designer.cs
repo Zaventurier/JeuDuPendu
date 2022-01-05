@@ -91,6 +91,7 @@ namespace JeuDuPendu
             // 
             // imgPendu
             // 
+            this.imgPendu.BackgroundImage = global::JeuDuPendu.Properties.Resources.pendu0;
             this.imgPendu.Location = new System.Drawing.Point(405, 15);
             this.imgPendu.Margin = new System.Windows.Forms.Padding(4);
             this.imgPendu.Name = "imgPendu";

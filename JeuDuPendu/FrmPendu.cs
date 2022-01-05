@@ -4,6 +4,7 @@
  * date : 02/07/2020
  */
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace JeuDuPendu
@@ -14,14 +15,19 @@ namespace JeuDuPendu
         char[] resultat = new char[15] { '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'};
         string mot2 = "";
         int compteur = 0;
+        bool erreur = true;
+        
 
         /// <summary>
         /// Initialisation des objets graphiques
         /// </summary>
         public frmPendu()
+
         {
             InitializeComponent();
+            imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu0");
         }
+
 
         /// <summary>
         /// Rempli le combo avec les lettres de l'alphabet
@@ -53,7 +59,7 @@ namespace JeuDuPendu
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-               //txtMot.Text = txtMot.Text.Length.ToString();
+                //txtMot.Text = txtMot.Text.Length.ToString();
                 int nbrlettre = txtMot.Text.Length;
                 mot = txtMot.Text;
                 txtMot.Text = "";
@@ -75,17 +81,23 @@ namespace JeuDuPendu
 
         private void btnTest_Click(object sender, EventArgs e)
         {
+            erreur = true;
             for (int i = 0; i < mot.Length; i++)
             {
                 if (mot[i] == Char.Parse(cboLettre.Text))
                 {
-                    resultat[i] = Char.Parse(cboLettre.Text); 
+                    resultat[i] = Char.Parse(cboLettre.Text);
+                    erreur = false;
                 }
-                if (mot[i] != Char.Parse(cboLettre.Text))
-                {
-                    compteur = compteur + 1;
-                }
+
             }
+            if (erreur)
+            {
+            compteur = compteur + 1;
+            imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu" + compteur);
+            }
+           
+                
 
             lblLettres.Text += cboLettre.Text;
             txtMot.Text = "";
