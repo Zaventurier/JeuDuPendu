@@ -119,6 +119,7 @@ namespace JeuDuPendu
             lblLettres.Text = "";
             mot = "";
             txtMot.Text = "";
+            //imgPendu_Click = "";
         }
 
         private void imgPendu_Click(object sender, EventArgs e)
