@@ -100,8 +100,8 @@ namespace JeuDuPendu
                     MessageBox.Show("Vous avez perdu :( ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
                 }
             }
-           
-                
+
+
 
             lblLettres.Text += cboLettre.Text;
             txtMot.Text = "";
