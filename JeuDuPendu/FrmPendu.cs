@@ -97,7 +97,7 @@ namespace JeuDuPendu
             imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu" + compteur);
                 if (compteur == 10)
                 {
-                    MessageBox.Show("Vous avez perdu :( ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
+                    MessageBox.Show("Vous avez perdu :( ! Le mot était " + mot + " ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
                 }
             }
 

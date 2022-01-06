@@ -161,7 +161,7 @@ namespace JeuDuPendu
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(379, 17);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Jeu du Pendu - Version 1.0.2 en date du 05 Janvier 2021 :";
+            this.label1.Text = "Jeu du Pendu - Version 1.0.3 en date du 06 Janvier 2021 :";
             // 
             // label2
             // 
@@ -226,7 +226,7 @@ namespace JeuDuPendu
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPendu";
-            this.Text = "Jeu du Pendu 1.0.2";
+            this.Text = "Jeu du Pendu 1.0.3";
             this.Load += new System.EventHandler(this.frmPendu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
