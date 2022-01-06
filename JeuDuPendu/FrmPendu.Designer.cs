@@ -45,6 +45,7 @@ namespace JeuDuPendu
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPendu)).BeginInit();
             this.grpTestLettres.SuspendLayout();
@@ -161,7 +162,7 @@ namespace JeuDuPendu
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(379, 17);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Jeu du Pendu - Version 1.0.3 en date du 06 Janvier 2021 :";
+            this.label1.Text = "Jeu du Pendu - Version 1.0.4 en date du 06 Janvier 2021 :";
             // 
             // label2
             // 
@@ -208,11 +209,21 @@ namespace JeuDuPendu
             this.label6.TabIndex = 10;
             this.label6.Text = "- Le mot doit faire 15 lettres maximum !";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(785, 238);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(388, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "- Une fois le mot trouvé, recliquez une fois sur le bouton test";
+            // 
             // frmPendu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1267, 641);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -226,7 +237,7 @@ namespace JeuDuPendu
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPendu";
-            this.Text = "Jeu du Pendu 1.0.3";
+            this.Text = "Jeu du Pendu 1.0.4";
             this.Load += new System.EventHandler(this.frmPendu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -260,6 +271,7 @@ namespace JeuDuPendu
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 

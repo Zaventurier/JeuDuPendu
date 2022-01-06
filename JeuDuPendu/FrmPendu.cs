@@ -100,6 +100,8 @@ namespace JeuDuPendu
                     MessageBox.Show("Vous avez perdu :( ! Le mot était " + mot + " ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
                 }
             }
+            if (txtMot.Text==mot)
+                MessageBox.Show("Vous avez gagné :) ! Vous pouvez retenter en cliquant sur le bouton rejouer !");
 
 
 
