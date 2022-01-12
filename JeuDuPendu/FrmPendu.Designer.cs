@@ -149,7 +149,7 @@ namespace JeuDuPendu
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(379, 17);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Jeu du Pendu - Version 1.0.5 en date du 12 Janvier 2021 :";
+            this.label1.Text = "Jeu du Pendu - Version 1.0.6 en date du 12 Janvier 2021 :";
             // 
             // label2
             // 
@@ -240,11 +240,12 @@ namespace JeuDuPendu
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(785, 283);
+            this.label8.Location = new System.Drawing.Point(771, 283);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(363, 17);
+            this.label8.Size = new System.Drawing.Size(535, 17);
             this.label8.TabIndex = 14;
-            this.label8.Text = "- Le joueur à la possibilité de tester le mot de son choix :";
+            this.label8.Text = "- Le joueur à la possibilité de tester le mot de son choix : [Fonctionnalité désa" +
+    "ctivée]";
             // 
             // label9
             // 
@@ -311,7 +312,7 @@ namespace JeuDuPendu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1267, 490);
+            this.ClientSize = new System.Drawing.Size(1324, 490);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -332,7 +333,7 @@ namespace JeuDuPendu
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPendu";
-            this.Text = "Jeu du Pendu 1.0.5";
+            this.Text = "Jeu du Pendu 1.0.6";
             this.Load += new System.EventHandler(this.frmPendu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

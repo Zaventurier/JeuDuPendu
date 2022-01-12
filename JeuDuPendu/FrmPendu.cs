@@ -16,7 +16,8 @@ namespace JeuDuPendu
         string mot2 = "";
         int compteur = 0;
         bool erreur = true;
-        
+        int nbrlettre;
+
 
         /// <summary>
         /// Initialisation des objets graphiques
@@ -60,7 +61,7 @@ namespace JeuDuPendu
             if (e.KeyChar == (char)Keys.Enter)
             {
                 //txtMot.Text = txtMot.Text.Length.ToString();
-                int nbrlettre = txtMot.Text.Length;
+                nbrlettre = txtMot.Text.Length;
                 mot = txtMot.Text;
                 txtMot.Text = "";
                 lblLettres.Text = "";
@@ -127,6 +128,7 @@ namespace JeuDuPendu
             txtMot.Text = "";
             imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu0");
             textBoxMot.Text = "";
+            nbrlettre = 0;
         }
 
         private void imgPendu_Click(object sender, EventArgs e)
@@ -141,22 +143,24 @@ namespace JeuDuPendu
 
         private void TesterMot_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Version corrective 1.0.6 - Fonctionnalité désactivé temporairement suite à un bug détecté en 1.0.5 !", "Fonctionnalité désactivée - 1.0.6");
             //Ce bouton va tester si le mot écrit dans la variable textBoxMot est bien égal à la variable mot
-            if(textBoxMot.Text != mot)
-            {
-                imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu10");
-                MessageBox.Show("Vous avez perdu :( ! Le mot était " + mot + " ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
-            }
-            else
-            {
-                txtMot.Text = mot;
-                MessageBox.Show("Vous avez gagné :) ! Vous pouvez retenter en cliquant sur le bouton rejouer !");
-                mot = "";
-            }
+            //if(textBoxMot.Text != mot)
+            //{
+            //imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu10");
+            //MessageBox.Show("Vous avez perdu :( ! Le mot était " + mot + " ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
+            //}
+            //else
+            //{
+            //txtMot.Text = mot;
+            //MessageBox.Show("Vous avez gagné :) ! Vous pouvez retenter en cliquant sur le bouton rejouer !");
+            //mot = "";
+            //}
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Vous êtes sur le point de quitter l'application ! Voulez vous vraiment quitter ?" , "Quitter l'application");
             Application.Exit();
         }
     }
