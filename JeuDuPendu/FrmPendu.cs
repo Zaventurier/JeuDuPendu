@@ -125,12 +125,39 @@ namespace JeuDuPendu
             lblLettres.Text = "";
             mot = "";
             txtMot.Text = "";
-            imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu0"); ;
+            imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu0");
+            textBoxMot.Text = "";
         }
 
         private void imgPendu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxMot_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TesterMot_Click(object sender, EventArgs e)
+        {
+            //Ce bouton va tester si le mot écrit dans la variable textBoxMot est bien égal à la variable mot
+            if(textBoxMot.Text != mot)
+            {
+                imgPendu.Image = (Image)Properties.Resources.ResourceManager.GetObject("pendu10");
+                MessageBox.Show("Vous avez perdu :( ! Le mot était " + mot + " ! Vous pouvez retenter votre chance en cliquant sur le bouton rejouer !");
+            }
+            else
+            {
+                txtMot.Text = mot;
+                MessageBox.Show("Vous avez gagné :) ! Vous pouvez retenter en cliquant sur le bouton rejouer !");
+                mot = "";
+            }
+        }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
